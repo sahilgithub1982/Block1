@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>92 Doner Kings - Login</title>
+    <style>
+        /* Reset some basic styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url("burger1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Header styling */
+.header {
+    background: linear-gradient(135deg, #ff8a00, #e52e71);
+    width: 100%;
+    margin-top: 10px;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Container for login form */
+.login-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    margin-top: 5rem; /* Offset for fixed header */
+}
+
+/* Login Form Title */
+.login-container h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Label styling */
+.login-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+/* Input fields styling */
+.login-container input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Submit button styling */
+.login-container button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #e52e71;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #ff8a00;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+    .header {
+        font-size: 1.5rem;
+    }
+
+    .login-container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .login-container h2 {
+        font-size: 1.25rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header with Doner King name -->
+    <div class="header">
+        92 Doner Kings
+    </div>
+
+
+    <!-- Login form container -->
+
+    <!-- Username:admin /password:123456789 -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

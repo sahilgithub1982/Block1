@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url("burger1.jpg") center/cover no-repeat;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #ff8a00, #e52e71);
+    color: #fff;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.75rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.main-sections {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    gap: 1rem;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    flex: 1;
+    min-width: 300px;
+    max-width: 1000px;
+    margin-bottom: 1rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.button, form button {
+    background-color: #e52e71;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.button:hover, form button:hover {
+    background-color: #ff8a00;
+}
+
+table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 1.5rem auto;
+    border-collapse: collapse;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+table thead {
+    background-color: #ff8a00;
+    color: #fff;
+    font-weight: bold;
+}
+
+table th, table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+table a {
+    text-decoration: none;
+    color: #e52e71;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+table a:hover {
+    color: #ff8a00;
+}
+
+@media (max-width: 1200px) {
+    .main-sections {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        width: 100%;
+    }
+    table {
+        font-size: 0.9rem;
+    }
+    .button, form button {
+        width: 100%;
+    }
+}
+
+#a, #b, #c, #d, #e, #f, #g, #h, #i {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 70px;
+    margin-top: 50px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#a:hover, #b:hover, #c:hover, #d:hover, #e:hover, #f:hover, #g:hover, #h:hover, #i:hover {
+    background-color: #ff8a00;
+    width: 350px;
+    color: white;
+}
+
+#aa, #bb, #cc, #dd, #ee, #ff, #gg, #hh, #ii {
+    display: none;
+}
